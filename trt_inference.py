@@ -16,11 +16,11 @@ def run():
     bUseModel = None
     bUseModelList = [None, 'FP16', 'INT8']
     nHeight, nWidth = 28, 28
-    paraFile = './para.npz'
-    onnxFile = './model.onnx'
+    paraFile = './assets/para.npz'
+    onnxFile = './assets/model.onnx'
 
     #为network中添加计算图的具体内容，可以通过1.tensorRT原生API搭建； 2.导入onnx文件进行Parser
-    useSourceApi = True
+    useSourceApi = False
     start = time.time()
     precision = 4
     # 记录日志文件
