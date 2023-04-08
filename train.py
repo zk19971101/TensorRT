@@ -102,9 +102,9 @@ def config():
     parser.add_argument('--n_w', default=4)
     parser.add_argument('--patience', default=(10, 1e-4))
     parser.add_argument('--img_sz', default=28)
-    # parser.add_argument('--paraFile', default='./para.npz')
-    parser.add_argument('--paraFile', default='./para.pth')
-    parser.add_argument('--onnxFile', default='./model.onnx')
+    # parser.add_argument('--paraFile', default='./assets/para.npz')
+    parser.add_argument('--paraFile', default='./assets/para.pth')
+    parser.add_argument('--onnxFile', default='./assets/model.onnx')
     parser.add_argument('--precision', default=4)
     args = parser.parse_args()
     return args

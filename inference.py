@@ -31,7 +31,7 @@ def inference(eval_loader, model, filePath, show=False):
 if __name__ == "__main__":
     bs = 8
     n_w = 4
-    filePath = "./para.pth"
+    filePath = "./assets/para.pth"
     eval_data = Mydataset(MNIST(root='./lib', train=False, download=True))
     eval_loader = DataLoader(
         dataset=eval_data,
